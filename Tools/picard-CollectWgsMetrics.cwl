@@ -30,6 +30,8 @@ inputs:
   - id: reference
     type: File
     format: edam:format_1929
+    secondaryFiles:
+      - .fai
     inputBinding:
       prefix: "REFERENCE_SEQUENCE="
       position: 3
