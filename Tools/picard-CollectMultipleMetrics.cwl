@@ -23,6 +23,8 @@ inputs:
   - id: in_bam
     type: File
     format: edam:format_2572
+    secondaryFiles:
+      - .fai
     inputBinding:
       prefix: "INPUT="
       position: 1
