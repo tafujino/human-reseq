@@ -1,8 +1,8 @@
 #!/usr/bin/env cwl-runner
 
 class: CommandLineTool
-id: picard-CollectWgsMetrics-2.10.6
-label: picard-CollectWgsMetrics-2.10.6
+id: picard-CollectWgsMetrics-2.22.5
+label: picard-CollectWgsMetrics-2.22.5
 cwlVersion: v1.0
 
 $namespaces:
@@ -10,7 +10,7 @@ $namespaces:
 
 hints:
   - class: DockerRequirement
-    dockerPull: 'quay.io/biocontainers/picard:2.10.6--py27_0'
+    dockerPull: 'quay.io/biocontainers/picard:2.22.5--0'
 
 requirements:
   - class: ShellCommandRequirement
