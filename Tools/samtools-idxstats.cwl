@@ -1,8 +1,8 @@
 #!/usr/bin/env cwl-runner
 
 class: CommandLineTool
-id: samtools-idxstats-1.6
-label: samtools-idxstats-1.6
+id: samtools-idxstats-1.10
+label: samtools-idxstats-1.10
 cwlVersion: v1.0
 
 $namespaces:
@@ -10,7 +10,7 @@ $namespaces:
 
 hints:
   - class: DockerRequirement
-    dockerPull: 'quay.io/biocontainers/samtools:1.6--0'
+    dockerPull: 'quay.io/biocontainers/samtools:1.10--h9402c20_2'
 
 requirements:
   - class: ShellCommandRequirement
