@@ -27,7 +27,7 @@ inputs:
       position: 1
     doc: input CRAM alignment file
     secondaryFiles:
-      - ^.crai
+      - .crai
 
 outputs:
   - id: idxstats
