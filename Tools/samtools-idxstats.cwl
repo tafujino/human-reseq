@@ -20,20 +20,19 @@ requirements:
 baseCommand: [ samtools, idxstats ]
 
 inputs:
-  - id: in_bam
+  - id: in_cram
     type: File
-    format: edam:format_2572
+    format: edam:format_3462
     inputBinding:
       position: 1
-    doc: input BAM alignment file
+    doc: input CRAM alignment file
     secondaryFiles:
-      - ^.bai
+      - ^.crai
 
 outputs:
   - id: idxstats
     type: stdout
 
-stdout: $(inputs.in_bam.basename).idxstats
+stdout: $(inputs.in_cram.basename).idxstats
 
 arguments: []
-
