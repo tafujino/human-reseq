@@ -17,7 +17,7 @@ requirements:
   - class: ResourceRequirement
     ramMin: 20000
 
-baseCommand: [ java, -Xmx12G, -jar, /usr/local/share/picard-2.10.6-0/picard.jar, CollectWgsMetrics ]
+baseCommand: [ java, -Xmx12G, -jar, /usr/local/share/picard-2.22.5-0/picard.jar, CollectWgsMetrics ]
 
 inputs:
   - id: in_bam
