@@ -41,7 +41,7 @@ outputs:
 
 arguments:
   - position: 1
-    valueFrom: "{if ($1 == \"X\") print $1\"\t1\t\"$2\"\t+\t\"$1}"
+    valueFrom: "{if ($1 == \"chrX\") print $1\"\t1\t\"$2\"\t+\t\"$1}"
   - position: 3
     valueFrom: "|"
   - position: 4
