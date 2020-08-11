@@ -44,6 +44,18 @@ inputs:
       prefix: "INTERVALS="
       position: 4
     doc: Interval list for reference genome
+  - id: minimum_base_quality
+    type: int?
+    inputBinding:
+      prefix: "MINIMUM_BASE_QUALITY="
+      position: 5
+    doc: Minimum base quality for a base to contribute coverage
+  - id: minimum_mapping_quality
+    type: int?
+    inputBinding:
+      prefix: "MINIMUM_MAPPING_QUALITY="
+      position: 6
+    doc: Minimum mapping quality for a read to contribute coverage
 
 outputs:
   - id: wgs_metrics
