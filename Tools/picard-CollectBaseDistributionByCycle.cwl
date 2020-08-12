@@ -1,4 +1,8 @@
-label: picard-CollectBaseDistributionByCycle
+#!/usr/bin/env cwl-runner
+
+class: CommandLineTool
+id: picard-CollectBaseDistributionByCycle-2.23.3
+label: picard-CollectBaseDistributionByCycle-2.23.3
 cwlVersion: v1.0
 
 $namespaces:
