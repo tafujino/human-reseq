@@ -27,6 +27,15 @@ inputs:
       prefix: "INPUT="
       position: 1
     doc: input BAM alignment file
+  - id: reference
+    type: File
+    format: edam:format_1929
+    secondaryFiles:
+      - .fai
+    inputBinding:
+      prefix: "REFERENCE_SEQUENCE="
+      position: 2
+    doc: FastA file for reference genome
 
 outputs:
   - id: collect_base_dist_by_cycle
@@ -43,7 +52,7 @@ outputs:
 stderr: $(inputs.in_bam.basename).collect_base_dist_by_cycle.log
 
 arguments:
-  - position: 2
-    valueFrom: "OUTPUT=$(inputs.in_bam.basename).collect_base_dist_by_cycle"
   - position: 3
+    valueFrom: "OUTPUT=$(inputs.in_bam.basename).collect_base_dist_by_cycle"
+  - position: 4
     valueFrom: "CHART=$(inputs.in_bam.basename).collect_base_dist_by_cycle.chart.pdf"
