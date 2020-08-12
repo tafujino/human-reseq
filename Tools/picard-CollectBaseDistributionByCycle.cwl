@@ -40,7 +40,7 @@ outputs:
   - id: log
     type: stderr
 
-stderr: $(inputs.in_bam.basename).$(inputs.reference_interval_name).wgs_metrics.log
+stderr: $(inputs.in_bam.basename).collect_base_dist_by_cycle.wgs_metrics.log
 
 arguments:
   - position: 2
